@@ -25,12 +25,21 @@ export default function Header() {
   return (
     <header className='bg-slate-200 shadow-md'>
       <div className='flex justify-between items-center max-w-6xl mx-auto p-3'>
+      <div className='flex items-center gap-3'>
+          <img className='w-10' p-3 alt='logo' src='src/assets/logo.png' />
+        
+        <div className=''>
         <Link to='/'>
           <h1 className='font-bold text-sm sm:text-xl flex flex-wrap'>
-            <span className='text-slate-500'>Sahand</span>
-            <span className='text-slate-700'>Estate</span>
+            <span className='text-red-500'>Share </span>
+            <span className='text-slate-700'>YourFood</span>
+           
           </h1>
         </Link>
+        </div>
+        </div>
+        
+      
         <form
           onSubmit={handleSubmit}
           className='bg-slate-100 p-3 rounded-lg flex items-center'
